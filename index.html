@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 1.75em;
+  text-align:center;
+}
+
+section {
+  
+  border: 1px solid black;
+  background-color: #ADD8E6;
+  width:auto;
+  position: relative;
+  margin: 1%;
+  font-size: 1.25em;
+
+}
+
+.size25 {}
+
+a {
+  float: left;
+  border: 1px solid black;
+  background-color: #808080;
+  position: absolute;
+  top:0%;
+  text-align: center;
+  right:0%;
+  width:auto;
+  padding: 0px 20px 0px 20px;
+  font-family: Helvetica;
+  color: white;
+}
+
+br {
+  padding: 30px 30px 30px 30px;
+  margin: 30px;
+  position:relative;
+}
+
+.ceviche {
+  background-color: #FF7F7F;
+}
+
+.lomosaltado{
+
+  background-color: #00FF00;
+
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  section {
+    float: left;
+    width: 31.3%;
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+  section {
+    float: left;
+    width: 48%;
+ }
+}
+/************Mobile Device Only*******/
+@media (max-width: 767px){
+  section {
+    float: left;
+    width: 97%;
+ }
+}
+
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<section>
+  <a class="lomosaltado">Lomo Saltado</a>
+  <br>Pieces of beef, tomato and onion, served alongside crispy fries and rice. These are the main ingredients that give life to one of the most representative stews of Peruvian gastronomy: Lomo saltado, the only dish that has conquered millions of palates in the world.</br>
+</section>
+
+<section>
+  <a class="ceviche"> Ceviche </a>
+  <br>Seafood dish where diced cubes of raw fish marinate in a lemon or lime juice mixture, and the reaction of the citrus juices cures the fish protein and causes it to become opaque and firm while absorbing flavor. This process is called denaturing—you’re more familiar with the process of denaturing with heat, a.k.a. cooking, but this reaction achieves a similar effect. After curing, the fish is then served with colorful seasoning elements such as onions, cilantro, and peppers. It’s a simple and bracing dish where fresh fish and bright flavors are put on display.</br>
+</section>
+
+<section>
+  <a > Aji de Gallina</a>
+  <br>Classic Peruvian dish that is a great example of combining a European style of making a sauce (mainly French, in this case) with local aji amarillo chili mixed in. It's essentially shredded chicken wrapped in a creamy walnut and bread-thickened sauce with a little chili kick.</br>
+
+</section> 
+</body>
+</html>
